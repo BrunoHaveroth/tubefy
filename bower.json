@@ -1,5 +1,7 @@
 {
   "name": "tubefy",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "blob-polyfill": "^1.0.20150320"
   }
 }

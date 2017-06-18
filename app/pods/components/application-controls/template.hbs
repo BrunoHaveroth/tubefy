@@ -1,0 +1,11 @@
+{{ember-youtube ytid=tubefyService.currentMusic delegate=this delegate-as="emberYoutube" playerVars=myPlayerVars}}
+<div class="application-controls">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="50" aria-valuemax="100" style="min-width: 2em; width: {{progress}}%;">
+    </div>
+  </div>
+
+  <button {{action "togglePlay" target=emberYoutube}} class="play-button {{if emberYoutube.isPlaying 'pause-button'}}">
+    <i class="fa fa-{{if emberYoutube.isPlaying 'pause' 'play'}}" aria-hidden="true"></i>
+  </button>
+</div>

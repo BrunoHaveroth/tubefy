@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'tubefy',
+    podModulePrefix: 'tubefy/pods',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

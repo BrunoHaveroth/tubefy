@@ -1,0 +1,16 @@
+<ul>
+  {{#each tubefyService.listToPlay.items as |music|}}
+    <li class="music-list" {{action 'playMusic' music}}>
+      <div class="music-image">
+        <img class="music-image" src="http://img.youtube.com/vi/{{music.id.videoId}}/hqdefault.jpg">
+        <button class="play-button">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+      </div>
+      <p class="music-title">
+        {{music.snippet.title}}
+      </p>
+      <div class="clearfix"></div>
+    </li>
+  {{/each}}
+</ul>

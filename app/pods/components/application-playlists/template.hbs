@@ -1,0 +1,9 @@
+<div class="application-playlists">
+  <p class="playlist-title"><i class="fa fa-list" aria-hidden="true"></i> Suas Playlists</p>
+  <ul class="content-playlists">
+    {{#each tubefyStore.playlists as |playlist|}}
+      <li class="playlist"><i class="fa fa-circle" aria-hidden="true"></i> {{playlist.name}}</li>
+    {{/each}}
+    <li class="new-playlist" data-toggle="modal" data-target="#modalNewPlylist"><i class="fa fa-plus" aria-hidden="true"></i> Nova Playlist</li>
+  </ul>
+</div>

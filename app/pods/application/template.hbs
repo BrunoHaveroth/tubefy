@@ -1,0 +1,17 @@
+<div class="container-left">
+  {{application-playlists}}
+</div>
+
+<div class="container-right">
+  {{application-search}}
+
+  {{application-music-list
+    currentMusic=currentMusic
+    emberYoutube=emberYoutube}}
+</div>
+
+{{application-controls
+  currentMusic=currentMusic
+  emberYoutube=emberYoutube}}
+
+{{application-new-playlist}}
